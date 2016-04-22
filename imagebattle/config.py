@@ -1,0 +1,3 @@
+SECRET_KEY = 'CHANGE_ME'
+SQLALCHEMY_DATABASE_URI = 'sqlite:///imagebattle.db'
+STATIC_ROOT = None

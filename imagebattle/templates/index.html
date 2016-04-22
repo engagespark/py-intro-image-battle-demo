@@ -1,0 +1,13 @@
+{% from "util.html" import render_field %}
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<a href="/choose/{{ left.image_id }}/{{ right.image_id }}"><img src="{{ left.url }}" width="400"/></a>
+
+vs
+
+<a href="/choose/{{ right.image_id }}/{{ left.image_id }}"><img src="{{ right.url }}" width="400"/></a>
+
+{% endblock %}

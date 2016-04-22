@@ -1,3 +1,48 @@
 body {
     padding-top: 60px;
 }
+
+.enclose-in-size-350 {
+	max-width: 350px;
+	max-height: 350px;
+	width: 100%
+	height: 100%;
+	overflow: hidden;
+	background-size: contain;
+	border: 5px dashed black;
+	border-style: ridge;
+}
+
+.war-container {
+	background: url('http://2.bp.blogspot.com/-kA5zq_hTqqQ/VBph29q6pEI/AAAAAAAAEUA/EB-e51cwzcw/s1600/MonozCore_Petir4.gif');
+	border: 1px solid black;
+	padding: 40px;
+}
+
+@keyframes fadeIn {
+	to {
+		opacity: 1;
+	}
+}
+
+.fade-in-left {
+	opacity: 0;
+	animation: fadeIn .5s ease-in 1 forwards;
+}
+
+.fade-in-vs {
+	opacity: 0;
+	animation: fadeIn .5s ease-in 1 forwards;
+}
+
+.fade-in-right {
+	opacity: 0;
+	animation: fadeIn .5s ease-in 1 forwards;
+}
+
+.grow {
+	transition: all .2s ease-in-out;
+}
+.grow:hover {
+	transform: scale(1.05);
+}

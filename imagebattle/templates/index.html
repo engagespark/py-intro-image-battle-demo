@@ -3,11 +3,13 @@
 {% extends "base.html" %}
 
 {% block content %}
+<center>
+<h1>Battle of the Mighty Crabs</h1>
+<div class="war-container">
+<a href="/choose/{{ left.image_id }}/{{ right.image_id }}"><img src="{{ left.url }}" class="enclose-in-size-350 grow fade-in-left"/></a>
 
-<a href="/choose/{{ left.image_id }}/{{ right.image_id }}"><img src="{{ left.url }}" width="400"/></a>
+&emsp;<img src="https://lh3.googleusercontent.com/-WaeW8gpfq4A/VxJ0SclPWgI/AAAAAAAASbc/E5pGktX6ucEanlSmbyJHkjwCN6eCmMMnQ/w168-h168-p/Vs.png" width="100px" class="fade-in-vs">&emsp;
 
-vs
-
-<a href="/choose/{{ right.image_id }}/{{ left.image_id }}"><img src="{{ right.url }}" width="400"/></a>
-
+<a href="/choose/{{ right.image_id }}/{{ left.image_id }}"><img src="{{ right.url }}" class="enclose-in-size-350 grow fade-in-right"/></a>
+</div>
 {% endblock %}

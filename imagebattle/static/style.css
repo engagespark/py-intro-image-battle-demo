@@ -1,5 +1,45 @@
 body {
-    padding-top: 60px;
+    background: black;
+    color: #AAAADD;
+    padding-top: 80px;
+    font-size: 20px;
+    font-family: serif;
+}
+
+
+.navbar, .navbar-inner {
+    background-color: black;
+    background-image: none;
+    border: none;
+    height: 60px;
+}
+
+.container {
+    width: auto;
+}
+
+.navbar ul li {
+    color: #AAAADD;
+    font-size: 2em;
+    outline-color: #9999BB;
+    line-height: 40px;
+}
+
+h1 {
+    margin: 1em 5em 0em 5em;
+}
+
+h2.subtitle {
+    font-size:0.8em;
+    margin-bottom: 2em;
+}
+
+.place {
+    margin: 30px auto;
+}
+
+.certificate {
+    font-size: 0.8em;
 }
 
 .enclose-in-size-350 {

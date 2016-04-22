@@ -4,10 +4,22 @@
 
 {% block content %}
 
-<h1>Leading Crabs!</h1>
-{% for image in images.query.order_by(images.ups.desc()) %}
-	<img src="{{ image.url }}" width="200" class="enclose-in-size-350 grow">
-	<p>Score: {{ image.ups }}/{{ image.totals }}</p>
-	<br>
+<center>
+    <h1>Leading … Crabs!</h1>
+    <h2 class="subtitle">(Where??)</h2>
+
+    {% for image in images.query.order_by(images.ups.desc()) %}
+    <div class="place">
+        <p>#{{ loop.index }}</p>
+        {% if loop.index == 1 %}<p class="certificate">(This guy is awesome!)</p>{% endif %}
+        {% if loop.last %}<p class="certificate">(Last. This crab doesn't get on my plate!)</p>{% endif %}
+	<img src="{{ image.url }}" width="300" class="enclose-in-size-350 grow">
+        {% if image.ups == 0 %}
+        <p>This crab confused whining with winning.</p>
+        {% else %}
+	<p>Won {{ image.ups }} out of {{ image.totals }} battles!</p>
+        {% endif %}
+    </div>
 {% endfor %}
 {% endblock %}
+</center>

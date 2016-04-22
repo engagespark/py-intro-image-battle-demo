@@ -3,6 +3,6 @@
 ## TODOs
 
 * [x] storing of votes
-* [ ] showing the leader board
+* [x] showing the leader board
 * [ ] showing random images from the internet
 * [ ] pretty css

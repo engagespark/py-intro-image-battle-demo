@@ -5,4 +5,9 @@
 {% block content %}
 
 <h1>Leading Crabs!</h1>
+{% for image in images.query.order_by(images.ups.desc()) %}
+	<img src="{{ image.url }}" width="200">
+	<p>Score: {{ image.ups }}/{{ image.totals }}</p>
+	<br>
+{% endfor %}
 {% endblock %}

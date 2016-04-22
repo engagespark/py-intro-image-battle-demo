@@ -21,4 +21,4 @@ def index():
 
 @app.route('/leading', methods=['GET', 'POST'])
 def leading():
-    return render_template('leading.html')
+    return render_template('leading.html', images=Image)
